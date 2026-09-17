@@ -22,9 +22,9 @@ if (esti==true)
     ujosszeg = (int)(osszeg * eszakaipotlek);
 }
 ///4.feladat
-Console.WriteLine($"utas neve: {utasnev}");
-Console.WriteLine($"megtett út:{ut}km");
-Console.WriteLine($"alapérték:{osszeg}");
+Console.WriteLine($"Utas neve: {utasnev}");
+Console.WriteLine($"Megtett távolság:{ut}km");
+Console.WriteLine($"Alapérték:{osszeg}");
 Console.WriteLine($"Fizetendő végösszeg:{ujosszeg}");
 if (esti == true)
 {
