@@ -25,7 +25,15 @@ if (esti==true)
 Console.WriteLine($"Utas neve: {utasnev}");
 Console.WriteLine($"Megtett távolság:{ut}km");
 Console.WriteLine($"Alapérték:{osszeg}");
-Console.WriteLine($"Fizetendő végösszeg:{ujosszeg}");
+if (esti == true)
+{
+    Console.WriteLine($"Fizetendő végösszeg:{ujosszeg}");
+}
+else
+{
+    Console.WriteLine($"Fizetendő végösszeg:{osszeg}");
+}
+
 if (esti == true)
 {
     Console.WriteLine($"Státus:20% éjszakai pótlék felszámolva");
