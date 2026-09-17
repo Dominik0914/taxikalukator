@@ -10,14 +10,27 @@ if (estiValasz == "igen")
 {
     esti = true;
 }
-Console.WriteLine("alapdíj(egész szám):");
-int dij = int.Parse(Console.ReadLine());
-Console.WriteLine("kilometer díj:");
-int kildij = int.Parse(Console.ReadLine());
+
+int dij = 1100;
+int kildij = 440;
 double eszakaipotlek = 1.20;
 ///3.feladat
+int ujosszeg=0;
 int osszeg = ut*kildij+dij;
 if (esti==true)
 {
-    osszeg = (int)(osszeg * eszakaipotlek);
+    ujosszeg = (int)(osszeg * eszakaipotlek);
+}
+///4.feladat
+Console.WriteLine($"utas neve: {utasnev}");
+Console.WriteLine($"megtett út:{ut}km");
+Console.WriteLine($"alapérték:{osszeg}");
+Console.WriteLine($"Fizetendő végösszeg:{ujosszeg}");
+if (esti == true)
+{
+    Console.WriteLine($"Státus:20% éjszakai pótlék felszámolva");
+}
+else
+{
+    Console.WriteLine($"Státus:Nincs 20% éjszakai pótlék felszámolva");
 }
